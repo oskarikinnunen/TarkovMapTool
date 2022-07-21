@@ -1,14 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "RUyg9wIWGxkth6djF3twfB0qldYe9x0dxsVsqKbBEiCpdtSvq2d+LEZVTXm4Z2uPM3AOwnkneSNOTlkgb50KEA==",
+  "dgSpecHash": "DwN9BCYo9YzzGFXNz8Br6FS+5BNepYF7fC1aSAD9icmickoOexgwgxFmLCvGyFwXHIeJcqs1fZQHkCg7sPiduw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RedGlass\\source\\repos\\TarkovMap\\TarkovMap\\TarkovMap.csproj",
+  "projectFilePath": "C:\\Users\\RedGlass\\source\\repos\\MapTool\\TarkovMap\\TarkovMap.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\RedGlass\\.nuget\\packages\\ironocr\\2022.3.0\\ironocr.2022.3.0.nupkg.sha512",
     "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\microsoft.web.webview2.1.0.1264.42.nupkg.sha512",
     "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "C:\\Users\\RedGlass\\.nuget\\packages\\system.drawing.common\\5.0.3\\system.drawing.common.5.0.3.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
     "C:\\Users\\RedGlass\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\RedGlass\\.nuget\\packages\\tesseract\\4.1.1\\tesseract.4.1.1.nupkg.sha512",
     "C:\\Users\\RedGlass\\.nuget\\packages\\tesseract.drawing\\4.1.1\\tesseract.drawing.4.1.1.nupkg.sha512"
