@@ -1,0 +1,6 @@
+2022/07/21-04:01:00.142 b330 Reusing MANIFEST C:\Users\RedGlass\source\repos\TarkovMap\TarkovMap\bin\x64\Debug\net6.0-windows7.0\TarkovMap.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2022/07/21-04:01:00.143 b330 Recovering log #108
+2022/07/21-04:01:00.144 b330 Reusing old log C:\Users\RedGlass\source\repos\TarkovMap\TarkovMap\bin\x64\Debug\net6.0-windows7.0\TarkovMap.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000108.log 
+2022/07/21-04:01:06.375 b330 Level-0 table #113: started
+2022/07/21-04:01:06.390 b330 Level-0 table #113: 430562 bytes OK
+2022/07/21-04:01:06.400 b330 Delete type=0 #108
