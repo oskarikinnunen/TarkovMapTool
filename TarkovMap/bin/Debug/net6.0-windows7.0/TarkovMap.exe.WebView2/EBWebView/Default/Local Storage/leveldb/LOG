@@ -1,5 +1,0 @@
-2022/07/21-08:59:53.338 77b4 Creating DB C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Debug\net6.0-windows7.0\TarkovMap.exe.WebView2\EBWebView\Default\Local Storage\leveldb since it was missing.
-2022/07/21-08:59:53.555 77b4 Reusing MANIFEST C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Debug\net6.0-windows7.0\TarkovMap.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2022/07/21-09:00:00.172 d600 Level-0 table #5: started
-2022/07/21-09:00:00.190 d600 Level-0 table #5: 425474 bytes OK
-2022/07/21-09:00:00.212 d600 Delete type=0 #3

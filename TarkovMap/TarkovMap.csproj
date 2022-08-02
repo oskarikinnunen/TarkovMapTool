@@ -3,19 +3,85 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows7.0</TargetFramework>
-    <Nullable>enable</Nullable>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+	<PublishSingleFile>true</PublishSingleFile>
+	<EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	<PublishReadyToRun>true</PublishReadyToRun>
     <UseWPF>true</UseWPF>
     <Platforms>AnyCPU;x64</Platforms>
+    <ApplicationIcon>MapsLarge.ico</ApplicationIcon>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="icons8-search-96.png" />
+    <None Remove="IsThishere.txt" />
+    <None Remove="maps\customs.png" />
+    <None Remove="maps\factory.png" />
+    <None Remove="maps\interchange.png" />
+    <None Remove="maps\labs.png" />
+    <None Remove="maps\lighthouse.png" />
+    <None Remove="maps\reserve.png" />
+    <None Remove="maps\shoreline.png" />
+    <None Remove="maps\woods.png" />
+    <None Remove="tessdata\.gitmodules" />
+    <None Remove="tessdata\eng.traineddata" />
     <None Remove="woods.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="IsThishere.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MapsLarge.ico" />
+    <Content Include="maps\customs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\factory.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\interchange.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\labs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\lighthouse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\reserve.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\shoreline.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="maps\woods.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\.gitmodules">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tessdata\eng.traineddata">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.1264.42" />
     <PackageReference Include="Tesseract" Version="4.1.1" />
     <PackageReference Include="Tesseract.Drawing" Version="4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icons8-search-96.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="logs\" />
   </ItemGroup>
 
 </Project>

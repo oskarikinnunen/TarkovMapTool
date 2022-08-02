@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DwN9BCYo9YzzGFXNz8Br6FS+5BNepYF7fC1aSAD9icmickoOexgwgxFmLCvGyFwXHIeJcqs1fZQHkCg7sPiduw==",
+  "dgSpecHash": "A0GBY1wEQ2xNyxM25N9KHALvhoInYzNS8miHalYZmtsXYPZieClcFOsnoM9opXFg1yR2A2e8JKkQr9wEGSF3eQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\RedGlass\\source\\repos\\MapTool\\TarkovMap\\TarkovMap.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,11 @@
     "C:\\Users\\RedGlass\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
     "C:\\Users\\RedGlass\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\RedGlass\\.nuget\\packages\\tesseract\\4.1.1\\tesseract.4.1.1.nupkg.sha512",
-    "C:\\Users\\RedGlass\\.nuget\\packages\\tesseract.drawing\\4.1.1\\tesseract.drawing.4.1.1.nupkg.sha512"
+    "C:\\Users\\RedGlass\\.nuget\\packages\\tesseract.drawing\\4.1.1\\tesseract.drawing.4.1.1.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.7\\microsoft.netcore.app.runtime.win-x64.6.0.7.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.7\\microsoft.aspnetcore.app.runtime.win-x64.6.0.7.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.7\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.7.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.7\\microsoft.netcore.app.crossgen2.win-x64.6.0.7.nupkg.sha512"
   ],
   "logs": []
 }

@@ -4,14 +4,34 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TarkovMap"
-        xmlns:Wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf" x:Class="TarkovMap.TrkvHelper"
+        xmlns:Wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf" x:Class="TarkovMap.TarkovMapWindow"
         mc:Ignorable="d"
-        Title="Tarkov Helper" Height="450" Width="800" BorderBrush="Black" Background="Black"
+        Title="Tarkov Helper" Height="1080" Width="1920" BorderBrush="Black" Background="Black"
         WindowStyle="SingleBorderWindow">
     <Grid x:Name="grid" Background="#FF151515" RenderTransformOrigin="0.503,0.435">
         <!--<WebBrowser x:Name="Browser" Margin="0,0,0,0" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Center" VerticalAlignment="Center" LoadCompleted="web_LoadCompleted"/>-->
-        <Border x:Name="MapBorder" ClipToBounds="True">
-            <Image x:Name="Map" HorizontalAlignment="Center" Margin="0,0,0,0" Stretch="Uniform" VerticalAlignment="Center" Source="/woods.png"
+
+        <Grid x:Name="webgrid" Height="1020" Width="1280" Visibility="Hidden">
+            <Wpf:WebView2 Name ="webView" Source="https://escapefromtarkov.fandom.com/wiki/Ballistics" Height="920" Width="1280" NavigationCompleted="webView_NavigationCompleted" NavigationStarting="webView_NavigationStarting"/>
+
+            <Button Content="CLOSE" Margin="1219,26,0,0" FontFamily="Bahnschrift" FontSize="16" Background="Gray" BorderBrush="Black" Click="Close_Click" Height="24" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+            <Image Margin="808,26,448,971" Source="/icons8-search-96.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" OpacityMask="#FF6F6F6F"/>
+            <TextBox Name ="URLBox" HorizontalAlignment="Center" Margin="0,25,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="388" Height="25" Background="#599AA536" FontSize="14" AcceptsReturn="False" KeyDown="TextBox_KeyDown" Foreground="White"/>
+            <Label Name="LoadLabel" Content="Loading site..." HorizontalAlignment="Left" Margin="839,25,0,0" VerticalAlignment="Top" Height="29" Width="124" Foreground="#FFED4343"/>
+
+        </Grid>
+
+        <Border x:Name="MapBorder" ClipToBounds="True" Margin="0,10,0,-10">
+            <Image x:Name="Map" HorizontalAlignment="Center" Margin="0,0,0,0" Stretch="Uniform" VerticalAlignment="Center"
                    MouseWheel="Map_MouseWheel" MouseLeftButtonDown="Map_MouseDown"
                    MouseLeftButtonUp="Map_MouseLeftButtonUp" MouseMove="Map_MouseMove"
                    MouseRightButtonDown="Map_MouseRightButtonDown">
@@ -29,15 +49,20 @@
 
 
 
-        <Expander HorizontalAlignment="Left" Header="" Margin="0,0,0,171" Width="117" IsExpanded="True">
-            <Grid>
-                <Button Content="Ballistics" Margin="0,10,0,0" VerticalAlignment="Top" Click="Button_Click"/>
-                <Label x:Name="DebugLabel" Content="" HorizontalAlignment="Center" Margin="0,78,0,0" VerticalAlignment="Top" Height="42" Width="115" Background="#FF989898"/>
-                <Button x:Name="ToggleBorder" Content="Toggle border" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" Width="115" Click="ToggleBorder_Click"/>
+        <Expander HorizontalAlignment="Left" Header="" Margin="0,0,0,776" Width="288" IsExpanded="True" Collapsed="Expander_Collapsed" Expanded="Expander_Expanded">
+            <Grid Width="293" Height="253" VerticalAlignment="Top">
+                <Button Content="Ballistics" Margin="0,10,0,0" VerticalAlignment="Top" Click="Ballistics_Click" Background="#66DDDDDD" HorizontalAlignment="Left" Width="169"/>
+                <Button Content="Market" Margin="0,40,0,0" VerticalAlignment="Top" Click="Market_Click" Background="#66DDDDDD" HorizontalAlignment="Left" Width="169"/>
+                <Button Content="Toggle Browser" Margin="0,70,0,0" VerticalAlignment="Top" Click="Close_Click" Background="#66DDDDDD" HorizontalAlignment="Left" Width="169"/>
+                <Button x:Name="ToggleBorder" Content="Toggle border" HorizontalAlignment="Left" VerticalAlignment="Top" Width="91" Click="ToggleBorder_Click" Background="#66DDDDDD" Margin="0,205,0,0"/>
+                <TextBox Name="WikiSearch" HorizontalAlignment="Left" Margin="0,126,0,0" TextWrapping="Wrap" Text="Search Wiki" VerticalAlignment="Top" Width="169" Height="30" GotFocus="WikiSearch_GotFocus" LostFocus="WikiSearch_LostFocus" KeyUp="WikiSearch_KeyUp"/>
+                <Button Name="WikiSearchButton" Content="Search" HorizontalAlignment="Left" Margin="0,156,0,0" VerticalAlignment="Top" Width="169" Height="32" Background="#FF616161" Click="WikiSearchButton_Click"/>
             </Grid>
 
+
         </Expander>
-        <Wpf:WebView2 Name ="webView" Source="https://escapefromtarkov.fandom.com/wiki/Ballistics" Visibility="Hidden" Height="920" Width="1280"/>
+
+        <Label x:Name="DebugLabel" Content="debug" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Height="40" Width="111" Background="#26989898" Foreground="#FFEA0D0D"/>
 
 
     </Grid>

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RedGlass\\source\\repos\\TarkovMap\\TarkovMap\\TarkovMap.csproj": {}
+    "C:\\Users\\RedGlass\\source\\repos\\MapTool\\TarkovMap\\TarkovMap.csproj": {}
   },
   "projects": {
-    "C:\\Users\\RedGlass\\source\\repos\\TarkovMap\\TarkovMap\\TarkovMap.csproj": {
+    "C:\\Users\\RedGlass\\source\\repos\\MapTool\\TarkovMap\\TarkovMap.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RedGlass\\source\\repos\\TarkovMap\\TarkovMap\\TarkovMap.csproj",
+        "projectUniqueName": "C:\\Users\\RedGlass\\source\\repos\\MapTool\\TarkovMap\\TarkovMap.csproj",
         "projectName": "TarkovMap",
-        "projectPath": "C:\\Users\\RedGlass\\source\\repos\\TarkovMap\\TarkovMap\\TarkovMap.csproj",
+        "projectPath": "C:\\Users\\RedGlass\\source\\repos\\MapTool\\TarkovMap\\TarkovMap.csproj",
         "packagesPath": "C:\\Users\\RedGlass\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RedGlass\\source\\repos\\TarkovMap\\TarkovMap\\obj\\publish\\win-x64\\",
+        "outputPath": "C:\\Users\\RedGlass\\source\\repos\\MapTool\\TarkovMap\\obj\\publish\\win-x64\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\RedGlass\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows"
+          "net6.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -26,7 +26,7 @@
         },
         "frameworks": {
           "net6.0-windows7.0": {
-            "targetAlias": "net6.0-windows",
+            "targetAlias": "net6.0-windows7.0",
             "projectReferences": {}
           }
         },
@@ -38,15 +38,19 @@
       },
       "frameworks": {
         "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+          "targetAlias": "net6.0-windows7.0",
           "dependencies": {
-            "IronOcr": {
-              "target": "Package",
-              "version": "[2022.3.0, )"
-            },
             "Microsoft.Web.WebView2": {
               "target": "Package",
               "version": "[1.0.1264.42, )"
+            },
+            "Tesseract": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "Tesseract.Drawing": {
+              "target": "Package",
+              "version": "[4.1.1, )"
             }
           },
           "imports": [

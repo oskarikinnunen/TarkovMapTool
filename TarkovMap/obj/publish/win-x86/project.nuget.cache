@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "bdvbTQkztkW+rJSuluWUo0cbvmr9nI2CGPLneBoi1cJJiR+4IiJahNlGnggO/Kkhzu3T427d5Dlb1hNWQc8ytg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\RedGlass\\source\\repos\\MapTool\\TarkovMap\\TarkovMap.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.web.webview2\\1.0.1264.42\\microsoft.web.webview2.1.0.1264.42.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\tesseract\\4.1.1\\tesseract.4.1.1.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\tesseract.drawing\\4.1.1\\tesseract.drawing.4.1.1.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.7\\microsoft.netcore.app.runtime.win-x86.6.0.7.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.7\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.7.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.7\\microsoft.aspnetcore.app.runtime.win-x86.6.0.7.nupkg.sha512",
+    "C:\\Users\\RedGlass\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.7\\microsoft.netcore.app.crossgen2.win-x64.6.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}

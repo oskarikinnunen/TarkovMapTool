@@ -525,3 +525,6 @@ C:\Users\RedGlass\source\repos\TarkovMap\TarkovMap\obj\Debug\net6.0-windows\win-
 C:\Users\RedGlass\source\repos\TarkovMap\TarkovMap\obj\Debug\net6.0-windows\win-x64\TarkovMap.pdb
 C:\Users\RedGlass\source\repos\TarkovMap\TarkovMap\obj\Debug\net6.0-windows\win-x64\TarkovMap.genruntimeconfig.cache
 C:\Users\RedGlass\source\repos\TarkovMap\TarkovMap\obj\Debug\net6.0-windows\win-x64\ref\TarkovMap.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\obj\Debug\net6.0-windows\win-x64\TarkovMap.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\obj\Debug\net6.0-windows\win-x64\refint\TarkovMap.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\obj\Debug\net6.0-windows\win-x64\TarkovMap.pdb

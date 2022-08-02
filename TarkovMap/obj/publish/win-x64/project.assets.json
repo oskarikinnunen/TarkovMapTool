@@ -2,18 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "IronOcr/2022.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Drawing.Common": "5.0.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/IronOcr.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/IronOcr.dll": {}
-        }
-      },
       "Microsoft.NETCore.Platforms/5.0.0": {
         "type": "package",
         "compile": {
@@ -71,7 +59,7 @@
           }
         }
       },
-      "System.Drawing.Common/5.0.3": {
+      "System.Drawing.Common/5.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "5.0.0"
@@ -92,21 +80,46 @@
             "rid": "win"
           }
         }
+      },
+      "System.Reflection.Emit/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Tesseract/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Tesseract.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tesseract.dll": {}
+        },
+        "build": {
+          "build/Tesseract.targets": {}
+        }
+      },
+      "Tesseract.Drawing/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "5.0.0",
+          "Tesseract": "4.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Tesseract.Drawing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tesseract.Drawing.dll": {}
+        }
       }
     },
     "net6.0-windows7.0/win-x64": {
-      "IronOcr/2022.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Drawing.Common": "5.0.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/IronOcr.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/IronOcr.dll": {}
-        }
-      },
       "Microsoft.NETCore.Platforms/5.0.0": {
         "type": "package",
         "compile": {
@@ -147,7 +160,7 @@
           "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll": {}
         }
       },
-      "System.Drawing.Common/5.0.3": {
+      "System.Drawing.Common/5.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.SystemEvents": "5.0.0"
@@ -158,28 +171,47 @@
         "runtime": {
           "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {}
         }
+      },
+      "System.Reflection.Emit/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Tesseract/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Tesseract.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tesseract.dll": {}
+        },
+        "build": {
+          "build/Tesseract.targets": {}
+        }
+      },
+      "Tesseract.Drawing/4.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "5.0.0",
+          "Tesseract": "4.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Tesseract.Drawing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tesseract.Drawing.dll": {}
+        }
       }
     }
   },
   "libraries": {
-    "IronOcr/2022.3.0": {
-      "sha512": "XDaDg6jMPYjOtv9LJZNj+9qWa1kTRcevlEAFuAszlvoOmsWy26MIaRBW5W1f2mfPMsbW4fTF+hi4x6dMtTOUuw==",
-      "type": "package",
-      "path": "ironocr/2022.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "EULA.txt",
-        "ironocr.2022.3.0.nupkg.sha512",
-        "ironocr.nuspec",
-        "lib/net40/IronOcr.dll",
-        "lib/net40/IronOcr.xml",
-        "lib/netstandard2.0/IronOcr.dll",
-        "lib/netstandard2.0/IronOcr.xml",
-        "readme-setup.txt",
-        "readme.txt"
-      ]
-    },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "sha512": "VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
       "type": "package",
@@ -316,10 +348,10 @@
         "version.txt"
       ]
     },
-    "System.Drawing.Common/5.0.3": {
-      "sha512": "rEQZuslijqdsO0pkJn7LtGBaMc//YVA8de0meGihkg9oLPaN+w+/Pb5d71lgp0YjPoKgBKNMvdq0IPnoW4PEng==",
+    "System.Drawing.Common/5.0.0": {
+      "sha512": "SztFwAnpfKC8+sEKXAFxCBWhKQaEd97EiOL7oZJZP56zbqnLpmxACWA8aGseaUExciuEAUuR9dY8f7HkTRAdnw==",
       "type": "package",
-      "path": "system.drawing.common/5.0.3",
+      "path": "system.drawing.common/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -352,17 +384,104 @@
         "runtimes/win/lib/netcoreapp2.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll",
         "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.xml",
-        "system.drawing.common.5.0.3.nupkg.sha512",
+        "system.drawing.common.5.0.0.nupkg.sha512",
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Reflection.Emit/4.7.0": {
+      "sha512": "VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
+      "type": "package",
+      "path": "system.reflection.emit/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/System.Reflection.Emit.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Reflection.Emit.dll",
+        "lib/netstandard1.1/System.Reflection.Emit.xml",
+        "lib/netstandard1.3/System.Reflection.Emit.dll",
+        "lib/netstandard2.0/System.Reflection.Emit.dll",
+        "lib/netstandard2.0/System.Reflection.Emit.xml",
+        "lib/netstandard2.1/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Reflection.Emit.dll",
+        "ref/netstandard1.1/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/de/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/es/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/fr/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/it/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ja/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ko/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/ru/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/zh-hans/System.Reflection.Emit.xml",
+        "ref/netstandard1.1/zh-hant/System.Reflection.Emit.xml",
+        "ref/netstandard2.0/System.Reflection.Emit.dll",
+        "ref/netstandard2.0/System.Reflection.Emit.xml",
+        "ref/netstandard2.1/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.dll",
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.xml",
+        "system.reflection.emit.4.7.0.nupkg.sha512",
+        "system.reflection.emit.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Tesseract/4.1.1": {
+      "sha512": "abufaW6N3P7TGJPI3RNTMSzS1ycnE1w6aW/Q+Hco/wCgm+bXUgR87JsGELvTcm2FISXGlQgs+PvYMVo9SlcPfg==",
+      "type": "package",
+      "path": "tesseract/4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Tesseract.targets",
+        "lib/net40/Tesseract.dll",
+        "lib/net45/Tesseract.dll",
+        "lib/netstandard2.0/Tesseract.dll",
+        "lib/netstandard2.0/Tesseract.xml",
+        "tesseract.4.1.1.nupkg.sha512",
+        "tesseract.nuspec",
+        "x64/leptonica-1.80.0.dll",
+        "x64/tesseract41.dll",
+        "x86/leptonica-1.80.0.dll",
+        "x86/tesseract41.dll"
+      ]
+    },
+    "Tesseract.Drawing/4.1.1": {
+      "sha512": "e4It6wAlU20bw6sLlcqe+Hx+2AN8gDkAcaqRMNQT5fQ5VDYvnOE9d8gx+jAoY6GyqVcoAPFxmvt9BDpUe46upw==",
+      "type": "package",
+      "path": "tesseract.drawing/4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Tesseract.Drawing.dll",
+        "tesseract.drawing.4.1.1.nupkg.sha512",
+        "tesseract.drawing.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "IronOcr >= 2022.3.0",
-      "Microsoft.Web.WebView2 >= 1.0.1264.42"
+      "Microsoft.Web.WebView2 >= 1.0.1264.42",
+      "Tesseract >= 4.1.1",
+      "Tesseract.Drawing >= 4.1.1"
     ]
   },
   "packageFolders": {
@@ -371,18 +490,18 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RedGlass\\source\\repos\\TarkovMap\\TarkovMap\\TarkovMap.csproj",
+      "projectUniqueName": "C:\\Users\\RedGlass\\source\\repos\\MapTool\\TarkovMap\\TarkovMap.csproj",
       "projectName": "TarkovMap",
-      "projectPath": "C:\\Users\\RedGlass\\source\\repos\\TarkovMap\\TarkovMap\\TarkovMap.csproj",
+      "projectPath": "C:\\Users\\RedGlass\\source\\repos\\MapTool\\TarkovMap\\TarkovMap.csproj",
       "packagesPath": "C:\\Users\\RedGlass\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RedGlass\\source\\repos\\TarkovMap\\TarkovMap\\obj\\publish\\win-x64\\",
+      "outputPath": "C:\\Users\\RedGlass\\source\\repos\\MapTool\\TarkovMap\\obj\\publish\\win-x64\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RedGlass\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows"
+        "net6.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -390,7 +509,7 @@
       },
       "frameworks": {
         "net6.0-windows7.0": {
-          "targetAlias": "net6.0-windows",
+          "targetAlias": "net6.0-windows7.0",
           "projectReferences": {}
         }
       },
@@ -402,15 +521,19 @@
     },
     "frameworks": {
       "net6.0-windows7.0": {
-        "targetAlias": "net6.0-windows",
+        "targetAlias": "net6.0-windows7.0",
         "dependencies": {
-          "IronOcr": {
-            "target": "Package",
-            "version": "[2022.3.0, )"
-          },
           "Microsoft.Web.WebView2": {
             "target": "Package",
             "version": "[1.0.1264.42, )"
+          },
+          "Tesseract": {
+            "target": "Package",
+            "version": "[4.1.1, )"
+          },
+          "Tesseract.Drawing": {
+            "target": "Package",
+            "version": "[4.1.1, )"
           }
         },
         "imports": [

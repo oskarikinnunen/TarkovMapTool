@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TarkovMap</id>
+    <version>1.0.0</version>
+    <authors>TarkovMap</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="Microsoft.Web.WebView2" version="1.0.1264.42" exclude="Build,Analyzers" />
+        <dependency id="Tesseract" version="4.1.1" exclude="Build,Analyzers" />
+        <dependency id="Tesseract.Drawing" version="4.1.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Debug\net6.0-windows7.0\TarkovMap.runtimeconfig.json" target="lib\net6.0-windows7.0\TarkovMap.runtimeconfig.json" />
+    <file src="C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Debug\net6.0-windows7.0\TarkovMap.dll" target="lib\net6.0-windows7.0\TarkovMap.dll" />
+  </files>
+</package>

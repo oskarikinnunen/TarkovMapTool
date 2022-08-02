@@ -1,0 +1,17 @@
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\TarkovMap.exe
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\x86\leptonica-1.80.0.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\x86\tesseract41.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\x64\leptonica-1.80.0.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\x64\tesseract41.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\TarkovMap.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\TarkovMap.deps.json
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\TarkovMap.runtimeconfig.json
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\TarkovMap.pdb
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\Microsoft.Web.WebView2.Core.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\Microsoft.Web.WebView2.WinForms.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\Microsoft.Web.WebView2.Wpf.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\Tesseract.dll
+C:\Users\RedGlass\source\repos\MapTool\TarkovMap\bin\Release\net6.0-windows7.0\publish\Tesseract.Drawing.dll
